@@ -22,59 +22,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio Cindy Lionis</title>
+    <title>À propos Cindy Lionis</title>
 </head>
 <body class="font-corps">
     <header>
             <div class="flex items-center justify-between py-8 px-4 md:px-8 lg:px-[6.5rem]">
                  <a href="index.html">
-                    <img src="assets/logocl.svg" class="h-12 w-12 md:h-32 md:w-32" alt="Cindy Lionis logo"/>
+                    <img src="assets/logocl.svg" class="h-12 w-12 md:h-16 md:w-16" alt="Cindy Lionis logo"/>
                 </a>
                 <nav>
-                    <ul class="flex gap-8 text-xl font-semibold m-auto lg:m-0">
+                    <ul class="flex gap-6 text-lg font-semibold m-auto lg:m-0">
                         <li>
                             <a href="about.html">À propos</a>
                         </li>
                         <li>
-                            <a href="#projets">Projets</a>
+                            <a href="projects.html">Projets</a>
                         </li>
                         <li>
-                            <a href="#contact">Contact</a>
+                            <a href="contact.html">Contact</a>
                         </li>
                     </ul>
                 </nav>
             </div>
 
     </header>
-    <main class="my-8 mx-4 md:my-20 md:mx-8 lg:mx-[6.5rem]">
-        <section class="flex flex-col md:flex-row items-center justify-between gap-8 ">
-            <div class="flex items-start">
-                <div class="circleMove font-bold -translate-y-12">
-                    <svg viewBox="0 0 300 300" width="200" height="200">
-                        <defs>
-                            <path
-                            id="circlePath"
-                            d="M150,150
-                                m-80,0
-                                a80,80 0 1,1 160,0
-                                a80,80 0 1,1 -160,0" />
-                        </defs>
+    <main class="my-8 mx-4 md:my-24 md:mx-8 lg:mx-[6.5rem]">
+        <div>
+            <h1 class="font-title text-4xl md:text-8xl font-semibold">Refonte site e-commerce Shopify</h1>
+        </div>
+        <section class="flex flex-col md:grid md:grid-cols-3 gap-4 md:grid-flow-row-dense">
+            <a href="" class="bg-white rounded-3xl w-full relative md:w-[48%] lg:w-[30%]">
+                <img src="assets/undraw_website_setup_re_2p6e.svg" class="w-full h-[16rem] object-cover rounded-t-3xl" alt=""/>
+                <h3></h3>
 
-                        <text font-size="15" letter-spacing="3" fill="#1c37cd">
-                            <textPath href="#circlePath">
-                            ✦ UI/UX DESIGNER ✦ FRONT-END ✦ PERFORMANCE 
-                            </textPath>
-                        </text>
-                    </svg>
-                </div>
-                <div class="lg:max-w-4xl">
-                    <h1 class="text-5xl font-semibold">Développeuse Front-end & UI/UX Designer</h1>
-                    <p class="text-lg mt-4 font-medium">Je conçois et développe des <strong>interfaces web performantes, intuitives et centrées sur l'utilisateur</strong>. De la recherche UX à l'intégration front-end, je crée des expériences fluides, un contenu clair et des parcours optimisés pour <strong>favoriser la conversion</strong>.</p>
-                    <a href="#projets" class="inline-block mt-6 px-6 py-3 bg-[#1a1b1f] border text-white font-medium uppercase rounded-sm hover:bg-[#ffff] hover:border hover:border-black hover:text-black  transition-colors duration-300">Voir mes projets</a>
-                </div>
-            </div>
-            <img src="assets/undraw_focused-dev_gqoa.svg" class="max-w-lg" alt="développeuse sur un ordinateur"/>
+            </a>
         </section>
     </main>
 
