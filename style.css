@@ -8,6 +8,25 @@
   }
 }
 
+.list-arrow > li::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.35em;
+  width: 15px;
+  height: 16px;
+  background-color: #1c37cd;
+  mask: url("assets/arrow.svg") center / contain no-repeat;
+  -webkit-mask: url("assets/arrow.svg") center / contain no-repeat;
+}
+
+.list-arrow > li {
+  position: relative;
+  counter-increment: list-item;
+  padding-inline-start: 2.25ch;
+  list-style: none;
+}
+
 @media screen and (min-width: 990px) {
     section.section-sticky{
         position: sticky;
