@@ -27,12 +27,12 @@
 </head>
 <body class="font-corps">
     <header>
-            <div class="flex items-center justify-between py-8 px-4 md:px-8 lg:px-[6.5rem]">
+            <div class="flex items-center justify-between gap-4 py-6 px-4 md:py-8 md:px-8 lg:px-[6.5rem]">
                  <a href="index.html">
-                    <img src="assets/logocl.svg" class="h-12 w-12 md:h-32 md:w-32" alt="Cindy Lionis logo"/>
+                    <img src="assets/logocl.svg" class="h-16 w-16 md:h-32 md:w-32" alt="Cindy Lionis logo"/>
                 </a>
                 <nav>
-                    <ul class="flex gap-8 text-xl font-semibold m-auto lg:m-0">
+                    <ul class="flex gap-3 text-sm font-semibold md:gap-8 md:text-xl lg:m-0">
                         <li>
                             <a href="#projets" class="transition-colors duration-300">Projets</a>
                         </li>
@@ -48,10 +48,10 @@
 
     </header>
     <main>
-        <section class="flex flex-col md:flex-row items-center justify-between gap-8 px-4 py-8 md:px-8 md:py-20 lg:px-[6.5rem]">
-            <div class="flex items-start">
-                <div class="circleMove font-bold -translate-y-16">
-                    <svg viewBox="0 0 300 300" width="200" height="200">
+        <section class="flex flex-col items-start justify-between gap-10 px-4 py-10 md:px-8 md:py-20 lg:flex-row lg:items-center lg:px-[6.5rem]">
+            <div class="flex flex-col items-start md:flex-row">
+                <div class="circleMove relative shrink-0 font-bold lg:-translate-y-16">
+                    <svg viewBox="0 0 300 300" width="200" height="200" class="absolute -top-8 -left-10 lg:relative lg:-top-0 lg:-left-0">
                         <defs>
                             <path
                             id="circlePath"
@@ -67,59 +67,59 @@
                             </textPath>
                         </text>
                     </svg>
+                    
                 </div>
-                <div class="lg:max-w-4xl">
-                    <h1 class="text-5xl leading-[1.2] font-semibold">Développeuse Front-end & UI/UX Designer</h1>
-                    <p class="text-xl mt-8 font-medium">Je conçois et développe des <strong>interfaces web performantes, intuitives et centrées sur l'utilisateur</strong>. De la recherche UX à l'intégration front-end, je crée des expériences fluides, un contenu clair et des parcours optimisés pour <strong>favoriser la conversion</strong>.</p>
-                    <a href="#projets" class="inline-block mt-10 px-6 py-3 bg-[#1a1b1f] border text-white font-medium uppercase rounded-full hover:bg-[#ffff] hover:border hover:border-black hover:text-black  transition-colors duration-300">Voir mes projets</a>
+                <div class="max-w-4xl mt-[73px] md:mt-0">
+                    <h1 class="pt-[10px] indent-[12%] tracking-[3px] text-4xl font-semibold md:text-5xl lg:pt-0 lg:indent-0 lg:tracking-normal lg:text-6xl lg:leading-[1.2]">Développeuse Front-end & UI/UX Designer</h1>
+                    <p class="mt-6 text-base font-medium leading-relaxed md:mt-8 md:text-lg lg:text-xl">Je conçois et développe des <strong>interfaces web performantes, intuitives et centrées sur l'utilisateur</strong>. De la recherche UX à l'intégration front-end, je crée des expériences fluides, un contenu clair et des parcours optimisés pour <strong>favoriser la conversion</strong>.</p>
+                    <a href="#projets" class="mt-8 inline-block px-6 py-3 bg-[#1a1b1f] border text-white font-medium uppercase rounded-full hover:bg-[#ffff] hover:border hover:border-black hover:text-black transition-colors duration-300 md:mt-10">Voir mes projets</a>
                 </div>
             </div>
-            <img src="assets/undraw_focused-dev_gqoa.svg" class="max-w-lg" alt="développeuse sur un ordinateur"/>
+            <img src="assets/undraw_focused-dev_gqoa.svg" class="hidden lg:block lg:max-w-lg" alt="développeuse sur un ordinateur"/>
         </section>
-        <section id="projets" class="section-sticky pt-20 pb-40">
-            <div class="bg-black text-white rounded-t-[8rem] px-4 md:px-8 md:py-20 lg:px-[6.5rem]">
-                <h2 class="font-title text-4xl font-semibold">Sélection de projets</h2>
+        <section id="projets" class="section-sticky py-20 lg:pt-20 lg:pb-40">
+            <div class="bg-black text-white rounded-t-[2rem] px-4 py-20 md:px-8 lg:px-[6.5rem] lg:rounded-t-[8rem]">
+                <h2 class="font-title text-3xl font-semibold lg:text-4xl">Sélection de projets</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
                     <a href="project.html" class="flex flex-col pb-4">
                         <img src="assets/cachecoeur.png" class="w-full aspect-[4/3] object-cover rounded-[2rem] mb-4" alt="projet 1"/>
-                        <h3 class="text-2xl font-semibold mb-2">Cache Cœur</h3>
-                        <p class="font-light text-lg">Shopify • UX/UI Design • Front-end</p>
+                        <h3 class="text-xl font-semibold mb-2 lg:text-2xl">Cache Cœur</h3>
+                        <p class="font-light text-base lg:text-lg">Shopify • UX/UI Design • Front-end</p>
                     </a>
                     <div class="flex flex-col pb-4">
                         <img src="assets/mouratoglou.png" class="w-full aspect-[4/3] object-cover rounded-[2rem] mb-4" alt="projet 2"/>
-                        <h3 class="text-2xl font-semibold mb-2">Mouratoglou</h3>
-                        <p class="font-light text-lg">Shopify • UX/UI Design • Front-end</p>
+                        <h3 class="text-xl font-semibold mb-2 lg:text-2xl">Mouratoglou</h3>
+                        <p class="font-light text-base lg:text-lg">Shopify • UX/UI Design • Front-end</p>
                     </div>
                     <div class="flex flex-col pb-4">
                         <img src="assets/herige.png" class="w-full aspect-[4/3] object-cover rounded-[2rem] mb-4" alt="projet 3"/>
-                        <h3 class="text-2xl font-semibold mb-2">Hérige</h3>
-                        <p class="font-light text-lg">WordPress • UX/UI Design</p>
+                        <h3 class="text-xl font-semibold mb-2 lg:text-2xl">Hérige</h3>
+                        <p class="font-light text-base lg:text-lg">WordPress • UX/UI Design</p>
                     </div>
                     <div class="flex flex-col pb-4">
                         <img src="assets/temo-2.png" class="w-full aspect-[4/3] object-cover rounded-[2rem] mb-4 " alt="projet 4"/>
-                        <h3 class="text-2xl font-semibold mb-2">Temo</h3>
-                        <p class="font-light text-lg">Shopify • UX/UI Design • Front-end</p>
+                        <h3 class="text-xl font-semibold mb-2 lg:text-2xl">Temo</h3>
+                        <p class="font-light text-base lg:text-lg">Shopify • UX/UI Design • Front-end</p>
                     </div>
                     <div class="flex flex-col pb-4">
                         <img src="assets/bankApi.png" class="w-full aspect-[4/3] rounded-[2rem] object-cover object-[50%_80%] mb-4" alt="projet 5"/>
-                        <h3 class="text-2xl font-semibold mb-2">Argent Bank</h3>
-                        <p class="font-light text-lg">React • Node.js • MongoDB</p>
+                        <h3 class="text-xl font-semibold mb-2 lg:text-2xl">Argent Bank</h3>
+                        <p class="font-light text-base lg:text-lg">React • Node.js • MongoDB</p>
                     </div>
                     <div class="flex flex-col pb-4">
                         <img src="assets/hrnet.png" class="w-full aspect-[4/3] object-cover rounded-[2rem] mb-4" alt="projet 6"/>
-                        <h3 class="text-2xl font-semibold mb-2">HRnet</h3>
-                        <p class="font-light text-lg">React • Node.js</p>
+                        <h3 class="text-xl font-semibold mb-2 lg:text-2xl">HRnet</h3>
+                        <p class="font-light text-base lg:text-lg">React • Node.js</p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="section bg-white rounded-t-[8rem]">
             <div class="px-4 md:px-8 md:py-20 lg:px-[6.5rem]">
-                <h2 class="font-title text-4xl font-semibold mb-8">Savoir-faire</h2>
-                <article class="grid grid-cols-[minmax(0,_0.9fr)_minmax(0,_1.1fr)] 
-                border-t border-gray-400 gap-8 py-6">
+                <h2 class="font-title text-3xl font-semibold mb-8 lg:text-4xl">Savoir-faire</h2>
+                <article class="grid grid-cols-1 gap-8 border-t border-gray-400 py-6 lg:grid-cols-[minmax(0,_0.9fr)_minmax(0,_1.1fr)]">
                     <div>
-                        <h3 class="text-3xl font-semibold">UI/UX Design</h3>
+                        <h3 class="text-2xl font-semibold lg:text-3xl">UI/UX Design</h3>
                         <p class="font-medium">Comprendre les utilisateurs, structurer les parcours, concevoir des interfaces efficaces.</p>
                     </div>
                     <ul class="flex flex-col self-center">
@@ -151,7 +151,7 @@
                         </li>
                     </ul>
                 </article>
-                <article class="grid grid-cols-[minmax(0,_0.9fr)_minmax(0,_1.1fr)] border-y border-gray-400 gap-8 py-6">
+                <article class="grid grid-cols-1 gap-8 border-y border-gray-400 py-6 lg:grid-cols-[minmax(0,_0.9fr)_minmax(0,_1.1fr)]">
                     <div>
                         <h3 class="text-3xl font-semibold">Développement Front-end</h3>
                         <p class="font-medium">Développer, optimiser, transformer : de la maquette à une interface performante.</p>
@@ -189,8 +189,8 @@
         </section>
         <section id="aPropos" class="bg-white py-20 relative px-4 md:px-8 md:py-20 lg:px-[6.5rem]">
               <h2 class="font-title text-4xl font-semibold mb-8">Parcours</h2>
-              <div class="grid grid-cols-1 lg:grid-cols-2 gap-32 items-stretch">
-                <div class="flex flex-col gap-8  bg-[#f3f3f2] p-8 rounded-[2rem] justify-center">
+                            <div class="grid grid-cols-1 items-stretch gap-12 lg:grid-cols-2 lg:gap-32">
+                                <div class="flex flex-col justify-center gap-8 rounded-[2rem] bg-[#f3f3f2] p-6 md:p-8">
                     <p class="font-semibold text-2xl">Développeuse front-end & UI/UX Designer depuis 3 ans, je conçois des sites web alliant créativité, performance et expérience client.</p>
                     <p class="text-lg font-medium">Après plusieurs années dans le secteur du tourisme, j'ai choisi de me reconvertir vers les métiers du web afin d'évoluer dans un domaine où je pourrais exprimer ma créativité au quotidien. J'ai suivi une première formation intensive de 8 mois, au cours de laquelle j'ai effectué un stage de 2 mois chez Lamour du Web. À l'issue de ce stage, j'ai souhaité aller plus loin en <strong>consolidant mes compétences techniques</strong> tout en continuant à travailler sur <strong>des projets concrets et variés</strong>. J'ai donc poursuivi mon parcours avec <strong>une alternance de 2 ans</strong>, qui m'a permis de <strong>gagner en autonomie, d'approfondir mes connaissances et de participer à la conception et au développement de sites vitrines et e-commerce.</strong></p>
                     <p class="text-lg font-medium"> Aujourd'hui, je suis Développeuse Front-end & UI/UX Designer. J'apprécie autant imaginer une interface intuitive que la développer avec un <strong>code propre et performant</strong>. Cette double approche me permet de concevoir des <strong>expériences cohérentes, du besoin utilisateur jusqu'à l'intégration</strong>. Je souhaite désormais mettre ces compétences au service de <strong>projets innovants et variés</strong>.</p>
@@ -200,7 +200,7 @@
                     <p class="font-title text-3xl font-medium">Expérience pro.</p>
                     <ul class="flex flex-col">
                         <li class="border-b border-gray-400 py-4 flex flex-col gap-2">
-                            <div class="flex justify-between items-center">
+                            <div class="flex flex-wrap justify-between gap-x-4 gap-y-1">
                                 <span class="text-lg text-gray-900">2024 - 2026</span>
                                 <span class="text-lg text-gray-900">Lanester</span>
                             </div>
@@ -208,7 +208,7 @@
                             <span class="text-lg font-medium text-gray-900">Agence Lamour du Web & Lamour du Shop</span>
                         </li>
                         <li class="border-b border-gray-400 py-4 flex flex-col gap-2">
-                            <div class="flex justify-between items-center">
+                            <div class="flex flex-wrap justify-between gap-x-4 gap-y-1">
                                 <span class="text-lg text-gray-900">2023</span>
                                 <span class="text-lg text-gray-900">Lanester</span>
                             </div>
@@ -219,7 +219,7 @@
                     <p class="font-title text-3xl font-medium mt-2">Formation</p>
                     <ul class="flex flex-col">
                         <li class="border-b border-gray-400 py-4 flex flex-col gap-2">
-                            <div class="flex justify-between items-center">
+                            <div class="flex flex-wrap justify-between gap-x-4 gap-y-1">
                                 <span class="text-lg text-gray-900">2024 - 2026</span>
                                 <span class="text-lg text-gray-900">Lanester</span>
                             </div>
@@ -227,7 +227,7 @@
                             <span class="text-lg font-medium text-gray-900">OpenClassrooms</span>
                         </li>
                         <li class="border-b border-gray-400 py-4 flex flex-col gap-2">
-                            <div class="flex justify-between items-center">
+                            <div class="flex flex-wrap justify-between gap-x-4 gap-y-1">
                                 <span class="text-lg text-gray-900">2023</span>
                                 <span class="text-lg text-gray-900">Vannes</span>
                             </div>
@@ -241,9 +241,9 @@
     </main>
 
     <footer id="footer" class="bg-black text-white py-16 px-4 md:px-8 lg:px-[6.5rem] flex flex-col">
-        <div class="lg:flex lg:justify-between">   
-            <div>
-                <img src="assets/logocl-blanc.svg" class="w-12  md:w-40" alt="Cindy Lionis logo"/>
+        <div class="flex flex-col gap-10 lg:flex-row lg:justify-between">   
+            <div class="max-w-xl">
+                <img src="assets/logocl-blanc.svg" class="w-28  md:w-40" alt="Cindy Lionis logo"/>
                 <p class="uppercase font-light">Développeuse Front-end & UI/UX Designer</p>
                 <span class="flex items-center gap-4 mt-8 text-xl">
                     <i class="fa-solid fa-location-dot text-2xl"></i>
@@ -254,7 +254,7 @@
                     Github
                 </a>
             </div>
-            <div>
+            <div class="w-full max-w-xl lg:w-auto">
                 <p class="font-semibold mb-4 text-2xl">Restons en contact</p>
                 <div class="flex flex-col">
                     <a href="https://www.linkedin.com/in/cindy-lionis-940005174" target="_blank" class="flex items-center gap-4 border-b-[0.5px] border-gray-700 py-4 text-xl">
