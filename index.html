@@ -27,12 +27,17 @@
 </head>
 <body class="font-corps">
     <header>
-            <div class="flex items-center justify-between gap-4 py-6 px-4 md:py-8 md:px-8 lg:px-[6.5rem]">
+            <div class="relative flex items-center justify-between gap-4 py-6 px-4 md:py-8 md:px-8 lg:px-[6.5rem]">
                  <a href="index.html">
                     <img src="assets/logocl.svg" class="h-16 w-16 md:h-32 md:w-32" alt="Cindy Lionis logo"/>
                 </a>
-                <nav>
-                    <ul class="flex gap-3 text-sm font-semibold md:gap-8 md:text-xl lg:m-0">
+                <button type="button" class="menu-icon relative h-10 w-10 rounded-md md:hidden" aria-expanded="false" aria-controls="main-menu" aria-label="Ouvrir le menu" data-menu-button>
+                    <span class="absolute left-2 right-2 top-1/2 h-0.5 -translate-y-1/2 rounded-full bg-[#1a1b1f] transition-transform duration-300"></span>
+                    <span class="absolute left-2 right-2 top-1/2 h-0.5 -translate-y-1/2 rounded-full bg-[#1a1b1f] transition-opacity duration-300"></span>
+                    <span class="absolute left-2 right-2 top-1/2 h-0.5 -translate-y-1/2 rounded-full bg-[#1a1b1f] transition-transform duration-300"></span>
+                </button>
+                <nav id="main-menu" class="absolute left-4 right-4 top-full z-10 hidden rounded-2xl bg-white p-4 shadow-lg md:static md:block md:bg-transparent md:p-0 md:shadow-none">
+                    <ul class="flex flex-col gap-4 text-sm font-semibold md:flex-row md:gap-8 md:text-xl lg:m-0">
                         <li>
                             <a href="#projets" class="transition-colors duration-300">Projets</a>
                         </li>
@@ -78,7 +83,7 @@
             <img src="assets/undraw_focused-dev_gqoa.svg" class="hidden lg:block lg:max-w-lg" alt="développeuse sur un ordinateur"/>
         </section>
         <section id="projets" class="section-sticky py-16 lg:pt-20 lg:pb-40">
-            <div class="bg-black text-white rounded-t-[2rem] px-4 py-14 md:px-8 lg:px-[6.5rem] lg:rounded-t-[8rem]">
+            <div class="bg-black text-white rounded-t-[2rem] px-4 py-14 md:px-8 md:py-20 lg:px-[6.5rem] lg:rounded-t-[8rem]">
                 <h2 class="font-title text-3xl font-semibold lg:text-4xl">Sélection de projets</h2>
                 <div class="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3 lg:mt-16">
                     <a href="project.html" class="flex flex-col pb-4">
@@ -271,7 +276,26 @@
         <hr class="my-8 border-gray-700">
         <p class="landing__credit">© 2026 Cindy Lionis</p>
     </footer>
+    <script>
+        const menuButton = document.querySelector('[data-menu-button]');
+        const mainMenu = document.querySelector('#main-menu');
 
+        menuButton.addEventListener('click', () => {
+            const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+            menuButton.setAttribute('aria-expanded', String(!isOpen));
+            menuButton.setAttribute('aria-label', isOpen ? 'Ouvrir le menu' : 'Fermer le menu');
+            mainMenu.classList.toggle('hidden', isOpen);
+            menuButton.classList.toggle('is-open', !isOpen);
+        });
 
+        mainMenu.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', () => {
+                menuButton.setAttribute('aria-expanded', 'false');
+                menuButton.setAttribute('aria-label', 'Ouvrir le menu');
+                mainMenu.classList.add('hidden');
+                menuButton.classList.remove('is-open');
+            });
+        });
+    </script>
 </body>
 </html>

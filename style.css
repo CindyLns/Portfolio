@@ -2,6 +2,30 @@
   animation: spin 15s linear infinite;
 }
 
+.menu-icon span {
+  transform: translateY(-50%);
+}
+
+.menu-icon span:first-child {
+  transform: translateY(calc(-50% - 8px));
+}
+
+.menu-icon span:last-child {
+  transform: translateY(calc(-50% + 8px));
+}
+
+.menu-icon.is-open span:first-child {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.menu-icon.is-open span:last-child {
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.menu-icon.is-open span:nth-child(2) {
+  opacity: 0;
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
