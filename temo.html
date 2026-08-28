@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        title: ['Playfair Display', 'serif'],
+                        corps: ['Quicksand', 'sans-serif'],
+                    },
+                },
+            }
+        }
+    </script>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Temo - Portfolio Cindy Lionis</title>
+</head>
+<body class="font-corps">
+    <header>
+            <div class="relative flex items-center justify-between gap-6 py-6 px-4 sm:py-8 md:px-8 lg:px-[6.5rem]">
+                 <a href="index.html">
+                    <img src="assets/logocl.svg" class="h-12 w-12 md:h-32 md:w-32" alt="Cindy Lionis logo"/>
+                </a>
+                <button type="button" class="menu-icon relative h-10 w-10 rounded-md md:hidden" aria-expanded="false" aria-controls="main-menu" aria-label="Ouvrir le menu" data-menu-button>
+                    <span class="absolute left-2 right-2 top-1/2 h-0.5 -translate-y-1/2 rounded-full bg-[#1a1b1f] transition-transform duration-300"></span>
+                    <span class="absolute left-2 right-2 top-1/2 h-0.5 -translate-y-1/2 rounded-full bg-[#1a1b1f] transition-opacity duration-300"></span>
+                    <span class="absolute left-2 right-2 top-1/2 h-0.5 -translate-y-1/2 rounded-full bg-[#1a1b1f] transition-transform duration-300"></span>
+                </button>
+                <nav id="main-menu" class="absolute left-4 right-4 top-full z-10 hidden rounded-2xl bg-white p-4 shadow-lg md:static md:block md:bg-transparent md:p-0 md:shadow-none">
+                    <ul class="flex flex-col gap-4 text-sm font-semibold md:flex-row md:gap-8 md:text-xl lg:m-0">
+                        <li>
+                            <a href="index.html#projets" class="transition-colors duration-300 hover:text-[#1c37cd] hover:font-bold">Projets</a>
+                        </li>
+                        <li>
+                            <a href="index.html#aPropos" class="transition-colors duration-300 hover:text-[#1c37cd] hover:font-bold">À propos</a>
+                        </li>
+                        <li>
+                            <a href="#footer" class="transition-colors duration-300 hover:text-[#1c37cd] hover:font-bold">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+    </header>
+    <main>
+        <section class="flex flex-col items-start justify-between gap-10 px-4 py-10 sm:py-14 md:px-8 md:py-14 lg:flex-row lg:items-center lg:px-[6.5rem]">
+            <div class="flex max-w-3xl flex-col gap-6 sm:gap-8">
+                <h1 class="font-title text-4xl font-bold md:text-5xl lg:text-6xl">TEMO</h1>
+                <p class="text-base font-medium leading-relaxed md:text-lg lg:text-xl">TEMO est une entreprise française spécialisée dans la conception de moteurs électriques pour bateaux. Fondée en 2018 à Nantes par Alexandre Seux et Justine Perussel, la marque souhaite repenser la propulsion nautique en proposant des solutions plus silencieuses, simples et durables.</p>
+                <a href="https://temofrance.com/fr-fr" target="_blank" class="text-base font-semibold underline underline-offset-4 lg:text-xl">Voir le site</a>
+            </div>
+            <div class="grid w-full max-w-3xl grid-cols-1 gap-5 md:grid-cols-3 md:gap-6 lg:w-auto lg:max-w-sm lg:grid-cols-1">
+                <div>
+                    <p class="text-sm uppercase text-[#747472] md:text-base lg:text-lg">Type</p>
+                    <p class="text-base font-medium md:text-lg lg:text-xl">Site e-commerce</p>
+                </div>
+                <div>
+                    <p class="text-sm uppercase text-[#747472] md:text-base lg:text-lg">Rôle</p>
+                    <p class="text-base font-medium md:text-lg lg:text-xl">UX/UI Designer • Développeuse Front-End</p>
+                </div>
+                <div>
+                    <p class="text-sm uppercase text-[#747472] md:text-base lg:text-lg">Outils utilisés</p>
+                    <p class="text-base font-medium md:text-lg lg:text-xl">Figma • Liquid Shopify • JavaScript</p>
+                </div>
+                
+            </div>
+        </section>
+        <section class="px-4 md:px-8 md:pb-14 lg:px-[6.5rem]">
+            <img src="assets/temo-2.png" class="mb-4 aspect-[4/3] w-full rounded-2xl object-cover md:aspect-[16/9] md:rounded-[2rem]" alt="projet 1"/>
+        </section>
+        <section class="py-10 px-4 md:px-8 md:pb-14 md:pt-0 lg:px-[6.5rem]">
+            <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-16">
+                <div class="">
+                    <p class="text-base font-medium uppercase md:text-xl">objectifs</p>
+                </div>
+                <div class="lg:col-span-2">
+                    <p class="mb-8 text-base font-medium leading-relaxed md:text-lg lg:text-2xl">Dans le cadre de la refonte de leur site e-commerce, TEMO a souhaité moderniser sa boutique en ligne <strong>en migrant de Odoo vers Shopify</strong>. Cette transition représentait l’opportunité de repenser l’expérience utilisateur et de proposer un site plus moderne, intuitif et performant.
+                    </p>
+                    <p class="mb-6 text-base font-medium leading-relaxed md:text-lg lg:text-2xl"><strong>Moderniser l’image de la marque</strong><br>
+                        Créer une identité visuelle à la hauteur de l’innovation portée par TEMO.
+                    </p>
+                    <p class="mb-6 text-base font-medium leading-relaxed md:text-lg lg:text-2xl"><strong>Simplifier la navigation</strong><br>
+                        Faciliter l’accès aux différentes gammes de moteurs et accessoires.
+                    </p>
+                    <p class="mb-6 text-base font-medium leading-relaxed md:text-lg lg:text-2xl"><strong>Améliorer le parcours d’achat</strong><br>
+                        Fluidifier la découverte du produit jusqu’à la conversion.
+                    </p>
+                    <p class="mb-6 text-base font-medium leading-relaxed md:text-lg lg:text-2xl"><strong>Développer le site à l'international</strong><br>
+                        Grâce à Shopify Markets, la gestion des différents marchés et l'expérience d'achat selon les pays sont simplifiées.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <img src="assets/desktopTemo.png" class="w-full object-contain mb-4" alt="Ecrans boutique Shopify Temo"/>
+        </section>
+        <section class="py-10 px-4 md:px-8 md:pb-14 md:pt-10 lg:px-[6.5rem]">
+            <div>
+                <h2 class="font-title text-3xl font-bold lg:text-5xl">Processus</h2>
+            </div>
+            <hr class="my-6 md:my-12 border-t border-black">
+            <div class="grid grid-cols-1 gap-4 md:gap-8 lg:grid-cols-3 lg:gap-16">
+                <div class="">
+                    <p class="text-base font-medium uppercase lg:text-xl">Conception et développement</p>
+                </div>
+                <div class="lg:col-span-2">
+                    <p class="mb-8 text-base font-medium leading-relaxed md:text-lg lg:text-2xl">J'ai participé au projet sur la conception UX/UI et le développement Front-End Shopify, de la création des interfaces sur Figma jusqu'à l'intégration d'un thème Shopify personnalisé.
+                    </p>
+                    <div class="mb-8">
+                        <p class="mb-4 text-lg font-bold lg:text-2xl">Conception UX/UI
+                        </p>
+                        <p class="text-base font-medium leading-relaxed mb-2 md:text-xl lg:text-2xl">
+                            Bien que le webdesign ne fasse pas partie du périmètre initial du projet, j’ai accompagné la refonte sur la partie UX et conception des interfaces desktop, en réalisant les maquettes sur Figma.
+                        </p>
+                        <p class="text-base font-medium leading-relaxed md:text-xl lg:text-2xl">
+                            L’objectif était de profiter de cette refonte pour repenser les principaux parcours et points de contact du site, avec une attention particulière portée à <strong>l'amélioration de l'expérience d’achat</strong>.
+                        </p>
+                    </div>
+                    <p class="mb-4 text-lg font-bold lg:text-2xl">Développement Front-End</p>
+                    <ul class="list-arrow">
+                        <li class="mb-2 text-base font-medium leading-relaxed md:text-lg lg:text-2xl"><strong>Personnalisation du thème Concept</strong> : création de sections personnalisées et entièrement administrables depuis l’éditeur Shopify.</li>
+                        <li class="mb-2 text-base font-medium leading-relaxed md:text-lg lg:text-2xl"><strong>Expérience utilisateur & navigation</strong> : repenser la navigation et le parcours d’achat à travers l’optimisation du méga-menu et la refonte des fiches produits. Intégration d’un CTA adapté au marché, d’informations techniques détaillées, d’une FAQ et d’une fenêtre d’aide contextuelle.</li>
+                        <li class="mb-2 text-base font-medium leading-relaxed md:text-lg lg:text-2xl"><strong>Intégration de fonctionnalités e-commerce</strong> : Shopify Markets, avis clients, formulaires personnalisés</li>
+                        <li class="mb-2 text-base font-medium leading-relaxed md:text-lg lg:text-2xl"><strong>SEO & architecture du site</strong> : optimisation des performances SEO</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="grid grid-cols-2 gap-4 py-10 px-4 md:gap-8 md:px-8 md:py-14 lg:grid-cols-4 lg:gap-16 lg:px-[6.5rem]">
+            <img src="assets/produitTemo.png" class="w-full object-contain rounded-sm shadow-[0_4px_15px_rgba(0,0,0,0.25)]" alt="Ecran mobile boutique Shopify page produit Temo"/>
+            <img src="assets/collectionTemo.png" class="w-full object-contain rounded-sm shadow-[0_4px_15px_rgba(0,0,0,0.25)]" alt="Ecran mobile boutique Shopify page collection Temo"/>
+            <img src="assets/panierTemo.png" class="w-full object-contain rounded-sm shadow-[0_4px_15px_rgba(0,0,0,0.25)]" alt="Ecran mobile boutique Shopify page panier Temo"/>
+            <img src="assets/menuTemo.png" class="w-full object-contain rounded-sm shadow-[0_4px_15px_rgba(0,0,0,0.25)]" alt="Ecran mobile boutique Shopify menu Temo"/>
+        </section>
+        <section class="py-10 px-4 md:px-8 md:py-14 lg:px-[6.5rem]">
+            <div>
+                <h2 class="font-title text-3xl font-bold lg:text-5xl">Impact</h2>
+            </div>
+            <hr class="my-6 md:my-12 border-t border-black">
+            <div class="grid grid-cols-1 gap-4 md:gap-8 lg:grid-cols-3 lg:gap-16">
+                <div class="">
+                    <p class="text-base font-medium uppercase lg:text-xl">Un site plus moderne, évolutif et adapté aux enjeux internationaux de la marque.</p>
+                </div>
+                <div class="lg:col-span-2">
+                    <p class="mb-4 text-base font-medium leading-relaxed md:text-lg lg:text-2xl lg:mb-8">La migration vers <strong>Shopify</strong> a permis à TEMO <strong>de moderniser son interface</strong> et de bénéficier d'une plateforme mieux <strong>adaptée à ses différents marchés</strong>. La nouvelle présentation des produits et les fonctionnalités d’accompagnement permettent de répondre plus efficacement aux <strong>besoins des utilisateurs</strong> et à faciliter leur <strong>décision d’achat</strong>.
+                    </p>
+                    <ul class="list-arrow">
+                        <li class="mb-2 text-base font-medium leading-relaxed md:text-lg lg:text-2xl">Une expérience d’achat plus fluide</li>
+                        <li class="mb-2 text-base font-medium leading-relaxed md:text-lg lg:text-2xl">Une fiche produit plus complète et rassurante</li>
+                        <li class="mb-2 text-base font-medium leading-relaxed md:text-lg lg:text-2xl">Une expérience adaptée aux différents marchés</li>
+                        <li class="mb-2 text-base font-medium leading-relaxed md:text-lg lg:text-2xl">Une base plus évolutive pour TEMO</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+       
+    </main>
+
+    <footer id="footer" class="bg-black text-white py-16 px-4 md:px-8 lg:px-[6.5rem] flex flex-col">
+        <div class="flex flex-col gap-6 lg:flex-row lg:justify-between lg:gap-10">   
+            <div class="max-w-xl">
+                <img src="assets/logocl-blanc.svg" class="w-28  md:w-40" alt="Cindy Lionis logo"/>
+                <p class="uppercase font-light">Développeuse Front-end & UI/UX Designer</p>
+                <span class="flex items-center gap-4 mt-6 text-lg lg:text-xl lg:mt-8">
+                    <i class="fa-solid fa-location-dot text-2xl"></i>
+                    Lanester
+                </span>
+                <a href="https://github.com/CindyLns" target="_blank" class="flex items-center gap-4 py-4 text-lg lg:text-xl">
+                    <i class="fa-brands fa-github text-2xl"></i>
+                    Github
+                </a>
+            </div>
+            <div class="w-full max-w-xl lg:w-auto">
+                <p class="font-semibold text-xl lg:text-2xl lg:mb-4">Restons en contact</p>
+                <div class="flex flex-col">
+                    <a href="https://www.linkedin.com/in/cindy-lionis-940005174" target="_blank" class="flex items-center gap-4 border-b-[0.5px] border-gray-700 py-4 text-lg lg:text-xl">
+                        <i class="fa-brands fa-linkedin text-2xl"></i>
+                        LinkedIn
+                    </a>
+                    <a href="mailto:cindy.lionis@gmail.com" class="flex items-center gap-4 py-4 text-lg lg:text-xl">
+                        <i class="fa-solid fa-envelope text-xl"></i>
+                        E-mail
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="my-8 border-gray-700">
+        <p class="landing__credit">© 2026 Cindy Lionis</p>
+    </footer>
+    <script>
+        const menuButton = document.querySelector('[data-menu-button]');
+        const mainMenu = document.querySelector('#main-menu');
+
+        menuButton.addEventListener('click', () => {
+            const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+            menuButton.setAttribute('aria-expanded', String(!isOpen));
+            menuButton.setAttribute('aria-label', isOpen ? 'Ouvrir le menu' : 'Fermer le menu');
+            mainMenu.classList.toggle('hidden', isOpen);
+            menuButton.classList.toggle('is-open', !isOpen);
+        });
+
+        mainMenu.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', () => {
+                menuButton.setAttribute('aria-expanded', 'false');
+                menuButton.setAttribute('aria-label', 'Ouvrir le menu');
+                mainMenu.classList.add('hidden');
+                menuButton.classList.remove('is-open');
+            });
+        });
+    </script>
+</body>
+</html>
