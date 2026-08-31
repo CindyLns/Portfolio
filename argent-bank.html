@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        title: ['Playfair Display', 'serif'],
+                        corps: ['Quicksand', 'sans-serif'],
+                    },
+                },
+            }
+        }
+    </script>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Argent Bank - Portfolio Cindy Lionis</title>
+</head>
+<body class="font-corps">
+    <header>
+            <div class="relative flex items-center justify-between gap-6 py-6 px-4 sm:py-8 md:px-8 lg:px-[6.5rem]">
+                 <a href="index.html">
+                    <img src="assets/logocl.svg" class="h-12 w-12 md:h-32 md:w-32" alt="Cindy Lionis logo"/>
+                </a>
+                <button type="button" class="menu-icon relative h-10 w-10 rounded-md md:hidden" aria-expanded="false" aria-controls="main-menu" aria-label="Ouvrir le menu" data-menu-button>
+                    <span class="absolute left-2 right-2 top-1/2 h-0.5 -translate-y-1/2 rounded-full bg-[#1a1b1f] transition-transform duration-300"></span>
+                    <span class="absolute left-2 right-2 top-1/2 h-0.5 -translate-y-1/2 rounded-full bg-[#1a1b1f] transition-opacity duration-300"></span>
+                    <span class="absolute left-2 right-2 top-1/2 h-0.5 -translate-y-1/2 rounded-full bg-[#1a1b1f] transition-transform duration-300"></span>
+                </button>
+                <nav id="main-menu" class="absolute left-4 right-4 top-full z-10 hidden rounded-2xl bg-white p-4 shadow-lg md:static md:block md:bg-transparent md:p-0 md:shadow-none">
+                    <ul class="flex flex-col gap-4 text-sm font-semibold md:flex-row md:gap-8 md:text-xl lg:m-0">
+                        <li>
+                            <a href="index.html#projets" class="transition-colors duration-300 hover:text-[#1c37cd] hover:font-bold">Projets</a>
+                        </li>
+                        <li>
+                            <a href="index.html#aPropos" class="transition-colors duration-300 hover:text-[#1c37cd] hover:font-bold">À propos</a>
+                        </li>
+                        <li>
+                            <a href="#footer" class="transition-colors duration-300 hover:text-[#1c37cd] hover:font-bold">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+    </header>
+    <main>
+        <section class="flex flex-col items-start justify-between gap-10 px-4 py-10 sm:py-14 md:px-8 md:py-14 lg:flex-row lg:items-center lg:px-[6.5rem]">
+            <div class="flex max-w-3xl flex-col gap-6 sm:gap-8">
+                <h1 class="font-title text-4xl font-bold md:text-5xl lg:text-6xl">Argent Bank</h1>
+                <p class="text-base font-medium leading-relaxed md:text-lg lg:text-xl">Application bancaire développée avec React et Redux, permettant aux utilisateurs de consulter leur espace bancaire et de gérer leurs informations. L’application communique avec une API REST pour récupérer et modifier les données, avec une interface responsive pensée pour offrir une expérience utilisateur fluide.</p>
+                <a href="https://github.com/CindyLns/Project-13-Bank-API" target="_blank" class="text-base font-semibold underline underline-offset-4 lg:text-xl">Voir le projet</a>
+            </div>
+            <div class="grid w-full max-w-3xl grid-cols-1 gap-5 md:grid-cols-3 md:gap-6 lg:w-auto lg:max-w-sm lg:grid-cols-1">
+                <div>
+                    <p class="text-sm uppercase text-[#747472] md:text-base lg:text-lg">Type</p>
+                    <p class="text-base font-medium md:text-lg lg:text-xl">Application web</p>
+                </div>
+                <div>
+                    <p class="text-sm uppercase text-[#747472] md:text-base lg:text-lg">Rôle</p>
+                    <p class="text-base font-medium md:text-lg lg:text-xl">Développeuse Front-End</p>
+                </div>
+                <div>
+                    <p class="text-sm uppercase text-[#747472] md:text-base lg:text-lg">Outils utilisés</p>
+                    <p class="text-base font-medium md:text-lg lg:text-xl">React • Redux • JavaScript • API REST</p>
+                </div>
+                
+            </div>
+        </section>
+        <section class="px-4 md:px-8 md:pb-14 lg:px-[6.5rem]">
+            <img src="assets/bankApi.png" class="mb-4 aspect-[4/3] w-full rounded-2xl object-cover object-bottom md:aspect-[16/9] md:rounded-[2rem]" alt="projet 1"/>
+        </section>
+        <section class="py-10 px-4 md:px-8 md:pb-14 md:pt-0 lg:px-[6.5rem]">
+            <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-16">
+                <div class="">
+                    <p class="text-base font-medium uppercase md:text-xl">objectifs</p>
+                </div>
+                <div class="lg:col-span-2">
+                    <p class="mb-8 text-base font-medium leading-relaxed md:text-lg lg:text-2xl">Dans le cadre de ma formation de développeur d'application JavaScript React, j'ai réalisé cette application bancaire afin de mettre en pratique le développement d’une interface utilisateur avec <strong>React</strong> et la gestion de l’état global avec <strong>Redux</strong>.
+                    </p>
+                    <p class="mb-6 text-base font-medium leading-relaxed md:text-lg lg:text-2xl">L’objectif du projet était de développer un <strong>tableau de bord bancaire</strong> responsive, permettant aux utilisateurs de consulter et de gérer leurs informations. L’application a également été connectée à une <strong>API REST</strong> afin d’assurer la communication entre le front-end et le back-end et de manipuler les données liées aux utilisateurs et aux transactions.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="py-10 px-4 md:px-8 md:pb-14 md:pt-10 lg:px-[6.5rem]">
+            <div>
+                <h2 class="font-title text-3xl font-bold lg:text-5xl">Processus</h2>
+            </div>
+            <hr class="my-6 md:my-12 border-t border-black">
+            <div class="grid grid-cols-1 gap-4 md:gap-8 lg:grid-cols-3 lg:gap-16">
+                <div class="">
+                    <p class="text-base font-medium uppercase lg:text-xl">Les différentes étapes du projet</p>
+                </div>
+                <div class="lg:col-span-2">
+                    <div class="mb-8">
+                        <p class="mb-4 text-lg font-bold lg:text-2xl">Phase 1 — Authentification et gestion du profil
+                        </p>
+                        <p class="text-base font-medium leading-relaxed mb-2 md:text-xl lg:text-2xl">
+                        J’ai développé le système d’authentification des utilisateurs permettant de se connecter et de se déconnecter de l’application. J’ai également mis en place la gestion des accès afin que chaque utilisateur puisse uniquement consulter ses propres informations après authentification.
+                        </p>
+                        <p class="text-base font-medium leading-relaxed md:text-xl lg:text-2xl">
+                            J’ai ensuite développé la fonctionnalité de modification du profil, avec la sauvegarde des informations mises à jour dans la base de données.
+                        </p>
+                    </div>
+                    <p class="mb-4 text-lg font-bold lg:text-2xl">Phase 2 — Gestion des transactions et API</p>
+                    <p class="text-base font-medium leading-relaxed mb-2 md:text-xl lg:text-2xl">
+                        J’ai participé à la mise en place de la gestion des transactions et à la définition des différentes routes de l’API REST. J’ai documenté les endpoints avec Swagger, en précisant pour chacun la méthode HTTP, la route, les paramètres attendus ainsi que les différents codes de réponse possibles.
+                    </p>
+                    <p class="text-base font-medium leading-relaxed mb-2 md:text-xl lg:text-2xl">
+                        Cette phase m’a permis de mettre en pratique la communication entre le front-end React et le back-end, ainsi que la conception et la documentation d’une API.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="grid grid-cols-1 gap-8 py-10 px-4 md:gap-8 md:px-8 md:py-14 lg:grid-cols-2 lg:gap-16 lg:px-[6.5rem]">
+            <img src="assets/connexion_bank.png" class="max-w-full object-contain rounded-sm shadow-[0_4px_15px_rgba(0,0,0,0.25)]" alt="Connexion à l'application"/>
+            <img src="assets/profil_bank.png" class="max-w-full object-contain rounded-sm shadow-[0_4px_15px_rgba(0,0,0,0.25)]" alt="Page de profil de l'application"/>
+            <img src="assets/profil_modifie_bank.png" class="max-w-full object-contain rounded-sm shadow-[0_4px_15px_rgba(0,0,0,0.25)]" alt="Profil modifé avec données de la base de données"/>
+            <img src="assets/swagger_bank.png" class="max-w-full object-contain rounded-sm shadow-[0_4px_15px_rgba(0,0,0,0.25)]" alt="Swagger API Documentation"/>
+        </section>
+        <section class="py-10 px-4 md:px-8 md:py-14 lg:px-[6.5rem]">
+            <div>
+                <h2 class="font-title text-3xl font-bold lg:text-5xl">Retour d’expérience</h2>
+            </div>
+            <hr class="my-6 md:my-12 border-t border-black">
+            <div class="grid grid-cols-1 gap-4 md:gap-8 lg:grid-cols-3 lg:gap-16">
+                <div class="">
+                    <p class="text-base font-medium uppercase lg:text-xl">Apprentissages & défis</p>
+                </div>
+                <div class="lg:col-span-2">
+                    <p class="mb-4 text-base font-medium leading-relaxed md:text-lg lg:text-2xl lg:mb-8">Ce projet m’a permis de <strong>développer mes compétences en React et Redux</strong>, notamment dans la gestion de l’état global d’une application avec Redux Toolkit. J’ai également appris à <strong>utiliser Swagger</strong> pour documenter une API REST et à intégrer le front-end et le back-end grâce aux <strong>appels API</strong>.
+                    </p>
+                    <p class="mb-4 text-base font-medium leading-relaxed md:text-lg lg:text-2xl lg:mb-8">La principale difficulté a été la <strong>prise en main de Redux et Redux Toolkit</strong>, notamment la compréhension de leur fonctionnement et la mise en place du <strong>store</strong>. J’ai dû comprendre comment organiser et centraliser les données de l’application afin de les rendre accessibles aux différents composants React.
+                    </p>
+                    <p class="mb-2 text-base font-medium leading-relaxed md:text-lg lg:text-2xl">Cette étape m’a permis de mieux comprendre la gestion d’un état global et de gagner en autonomie dans l’utilisation de Redux.
+                    </p>
+                </div>
+            </div>
+        </section>
+       
+    </main>
+
+    <footer id="footer" class="bg-black text-white py-16 px-4 md:px-8 lg:px-[6.5rem] flex flex-col">
+        <div class="flex flex-col gap-6 lg:flex-row lg:justify-between lg:gap-10">   
+            <div class="max-w-xl">
+                <img src="assets/logocl-blanc.svg" class="w-28  md:w-40" alt="Cindy Lionis logo"/>
+                <p class="uppercase font-light">Développeuse Front-end & UI/UX Designer</p>
+                <span class="flex items-center gap-4 mt-6 text-lg lg:text-xl lg:mt-8">
+                    <i class="fa-solid fa-location-dot text-2xl"></i>
+                    Lanester
+                </span>
+                <a href="https://github.com/CindyLns" target="_blank" class="flex items-center gap-4 py-4 text-lg lg:text-xl">
+                    <i class="fa-brands fa-github text-2xl"></i>
+                    Github
+                </a>
+            </div>
+            <div class="w-full max-w-xl lg:w-auto">
+                <p class="font-semibold text-xl lg:text-2xl lg:mb-4">Restons en contact</p>
+                <div class="flex flex-col">
+                    <a href="https://www.linkedin.com/in/cindy-lionis-940005174" target="_blank" class="flex items-center gap-4 border-b-[0.5px] border-gray-700 py-4 text-lg lg:text-xl">
+                        <i class="fa-brands fa-linkedin text-2xl"></i>
+                        LinkedIn
+                    </a>
+                    <a href="mailto:cindy.lionis@gmail.com" class="flex items-center gap-4 py-4 text-lg lg:text-xl">
+                        <i class="fa-solid fa-envelope text-xl"></i>
+                        E-mail
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="my-8 border-gray-700">
+        <p class="landing__credit">© 2026 Cindy Lionis</p>
+    </footer>
+    <script>
+        const menuButton = document.querySelector('[data-menu-button]');
+        const mainMenu = document.querySelector('#main-menu');
+
+        menuButton.addEventListener('click', () => {
+            const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+            menuButton.setAttribute('aria-expanded', String(!isOpen));
+            menuButton.setAttribute('aria-label', isOpen ? 'Ouvrir le menu' : 'Fermer le menu');
+            mainMenu.classList.toggle('hidden', isOpen);
+            menuButton.classList.toggle('is-open', !isOpen);
+        });
+
+        mainMenu.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', () => {
+                menuButton.setAttribute('aria-expanded', 'false');
+                menuButton.setAttribute('aria-label', 'Ouvrir le menu');
+                mainMenu.classList.add('hidden');
+                menuButton.classList.remove('is-open');
+            });
+        });
+    </script>
+</body>
+</html>
