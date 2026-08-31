@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        title: ['Playfair Display', 'serif'],
+                        corps: ['Quicksand', 'sans-serif'],
+                    },
+                },
+            }
+        }
+    </script>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>HRnet - Portfolio Cindy Lionis</title>
+</head>
+<body class="font-corps">
+    <header>
+            <div class="relative flex items-center justify-between gap-6 py-6 px-4 sm:py-8 md:px-8 lg:px-[6.5rem]">
+                 <a href="index.html">
+                    <img src="assets/logocl.svg" class="h-12 w-12 md:h-32 md:w-32" alt="Cindy Lionis logo"/>
+                </a>
+                <button type="button" class="menu-icon relative h-10 w-10 rounded-md md:hidden" aria-expanded="false" aria-controls="main-menu" aria-label="Ouvrir le menu" data-menu-button>
+                    <span class="absolute left-2 right-2 top-1/2 h-0.5 -translate-y-1/2 rounded-full bg-[#1a1b1f] transition-transform duration-300"></span>
+                    <span class="absolute left-2 right-2 top-1/2 h-0.5 -translate-y-1/2 rounded-full bg-[#1a1b1f] transition-opacity duration-300"></span>
+                    <span class="absolute left-2 right-2 top-1/2 h-0.5 -translate-y-1/2 rounded-full bg-[#1a1b1f] transition-transform duration-300"></span>
+                </button>
+                <nav id="main-menu" class="absolute left-4 right-4 top-full z-10 hidden rounded-2xl bg-white p-4 shadow-lg md:static md:block md:bg-transparent md:p-0 md:shadow-none">
+                    <ul class="flex flex-col gap-4 text-sm font-semibold md:flex-row md:gap-8 md:text-xl lg:m-0">
+                        <li>
+                            <a href="index.html#projets" class="transition-colors duration-300 hover:text-[#1c37cd] hover:font-bold">Projets</a>
+                        </li>
+                        <li>
+                            <a href="index.html#aPropos" class="transition-colors duration-300 hover:text-[#1c37cd] hover:font-bold">À propos</a>
+                        </li>
+                        <li>
+                            <a href="#footer" class="transition-colors duration-300 hover:text-[#1c37cd] hover:font-bold">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+    </header>
+    <main>
+        <section class="flex flex-col items-start justify-between gap-10 px-4 py-10 sm:py-14 md:px-8 md:py-14 lg:flex-row lg:items-center lg:px-[6.5rem]">
+            <div class="flex max-w-3xl flex-col gap-6 sm:gap-8">
+                <h1 class="font-title text-4xl font-bold md:text-5xl lg:text-6xl">HRnet</h1>
+                <p class="text-base font-medium leading-relaxed md:text-lg lg:text-xl">Modernisation de l’application HRNet avec React, avec pour objectif de remplacer progressivement les fonctionnalités jQuery par des composants React et d’évaluer les performances de la nouvelle version.</p>
+                <a href="https://github.com/CindyLns/Projet-HRNet" target="_blank" class="text-base font-semibold underline underline-offset-4 lg:text-xl">Voir le projet</a>
+            </div>
+            <div class="grid w-full max-w-3xl grid-cols-1 gap-5 md:grid-cols-3 md:gap-6 lg:w-auto lg:max-w-sm lg:grid-cols-1">
+                <div>
+                    <p class="text-sm uppercase text-[#747472] md:text-base lg:text-lg">Type</p>
+                    <p class="text-base font-medium md:text-lg lg:text-xl">Application web</p>
+                </div>
+                <div>
+                    <p class="text-sm uppercase text-[#747472] md:text-base lg:text-lg">Rôle</p>
+                    <p class="text-base font-medium md:text-lg lg:text-xl">Développeuse Front-End</p>
+                </div>
+                <div>
+                    <p class="text-sm uppercase text-[#747472] md:text-base lg:text-lg">Outils utilisés</p>
+                    <p class="text-base font-medium md:text-lg lg:text-xl">React • Redux • npm</p>
+                </div>
+                
+            </div>
+        </section>
+        <section class="px-4 md:px-8 md:pb-14 lg:px-[6.5rem]">
+            <img src="assets/hrnet.png" class="mb-4 aspect-[4/3] w-full rounded-2xl object-cover md:aspect-[16/9] md:rounded-[2rem]" alt="projet 1"/>
+        </section>
+        <section class="py-10 px-4 md:px-8 md:pb-14 md:pt-0 lg:px-[6.5rem]">
+            <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-16">
+                <div class="">
+                    <p class="text-base font-medium uppercase md:text-xl">objectifs</p>
+                </div>
+                <div class="lg:col-span-2">
+                    <p class="mb-8 text-base font-medium leading-relaxed md:text-lg lg:text-2xl">Dans le cadre de ma formation de développeur d'application JavaScript React, j’ai participé à la modernisation d’une application web en migrant une partie de son architecture de <strong>jQuery vers React</strong>. 
+                    </p>
+                    <p class="mb-6 text-base font-medium leading-relaxed md:text-lg lg:text-2xl">L’objectif du projet était de faire évoluer progressivement cette application vers une <strong>architecture plus moderne</strong> en remplaçant ce plugin par un composant développé avec React. Cette migration devait répondre à plusieurs enjeux : conserver le fonctionnement de l’application existante, faciliter la maintenance du code, améliorer les performances et disposer d’un <strong>composant React réutilisable</strong>.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="py-10 px-4 md:px-8 md:pb-14 md:pt-10 lg:px-[6.5rem]">
+            <div>
+                <h2 class="font-title text-3xl font-bold lg:text-5xl">Processus</h2>
+            </div>
+            <hr class="my-6 md:my-12 border-t border-black">
+            <div class="grid grid-cols-1 gap-4 md:gap-8 lg:grid-cols-3 lg:gap-16">
+                <div class="">
+                    <p class="text-base font-medium uppercase lg:text-xl">Les différentes étapes du projet</p>
+                </div>
+                <div class="lg:col-span-2">
+                    <span class="flex items-center gap-4 mb-3">
+                        <svg width="15" height="16" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.7071 8.07108C14.0976 7.68055 14.0976 7.04739 13.7071 6.65686L7.34315 0.292901C6.95262 -0.0976237 6.31946 -0.0976237 5.92893 0.292901C5.53841 0.683425 5.53841 1.31659 5.92893 1.70711L11.5858 7.36397L5.92893 13.0208C5.53841 13.4113 5.53841 14.0445 5.92893 14.435C6.31946 14.8256 6.95262 14.8256 7.34315 14.435L13.7071 8.07108ZM0 7.36397L-8.74228e-08 8.36397L13 8.36397L13 7.36397L13 6.36397L8.74228e-08 6.36397L0 7.36397Z" fill="#1c37cd"/>
+                        </svg>
+                        <p class="text-base font-bold leading-relaxed md:text-lg lg:text-2xl">Conversion du plugin jQuery en composant React</p>
+                    </span>
+                    <p class="mb-3 text-base font-medium leading-relaxed md:text-lg lg:text-2xl">
+                    J’ai commencé par sélectionner l’un des quatre plugins jQuery à convertir. J’ai choisi le plugin de fenêtre modale, utilisé pour afficher une confirmation après la création d’un nouvel employé.
+                    </p>
+                    <p class="mb-3 text-base font-medium leading-relaxed md:text-lg lg:text-2xl">J’ai donc développé une version de cette fonctionnalité sous la forme d’un composant React réutilisable, en conservant le comportement attendu de la fenêtre modale tout en l’adaptant à l’architecture React.
+                    </p>
+                    <p class="mb-6 text-base font-medium leading-relaxed md:text-lg lg:text-2xl">Une fois le composant finalisé, je l’ai publié sur npm sous forme de package, afin de pouvoir le réutiliser et de le rendre facilement accessible.
+                    </p>
+                    <span class="flex items-center gap-4 mb-3">
+                        <svg width="15" height="16" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.7071 8.07108C14.0976 7.68055 14.0976 7.04739 13.7071 6.65686L7.34315 0.292901C6.95262 -0.0976237 6.31946 -0.0976237 5.92893 0.292901C5.53841 0.683425 5.53841 1.31659 5.92893 1.70711L11.5858 7.36397L5.92893 13.0208C5.53841 13.4113 5.53841 14.0445 5.92893 14.435C6.31946 14.8256 6.95262 14.8256 7.34315 14.435L13.7071 8.07108ZM0 7.36397L-8.74228e-08 8.36397L13 8.36397L13 7.36397L13 6.36397L8.74228e-08 6.36397L0 7.36397Z" fill="#1c37cd"/>
+                        </svg>
+                        <p class="text-base font-bold leading-relaxed md:text-lg lg:text-2xl">Migration de l’application HRNet vers React</p>
+                    </span>
+                    <p class="mb-3 text-base font-medium leading-relaxed md:text-lg lg:text-2xl">J’ai ensuite entrepris la conversion de l’ensemble de l’application HRNet vers React.
+                    </p>
+                    <p class="mb-6 text-base font-medium leading-relaxed md:text-lg lg:text-2xl">J’ai recréé les principales pages de l’application, notamment « Create Employee » et « Employee List », sous forme de composants React. J’ai également mis en place un système de gestion d’état afin de gérer les données de l’application de manière plus adaptée à React, en remplacement du système de stockage local utilisé dans la version d’origine.
+                    </p>
+                    <span class="flex items-center gap-4 mb-3">
+                        <svg width="15" height="16" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.7071 8.07108C14.0976 7.68055 14.0976 7.04739 13.7071 6.65686L7.34315 0.292901C6.95262 -0.0976237 6.31946 -0.0976237 5.92893 0.292901C5.53841 0.683425 5.53841 1.31659 5.92893 1.70711L11.5858 7.36397L5.92893 13.0208C5.53841 13.4113 5.53841 14.0445 5.92893 14.435C6.31946 14.8256 6.95262 14.8256 7.34315 14.435L13.7071 8.07108ZM0 7.36397L-8.74228e-08 8.36397L13 8.36397L13 7.36397L13 6.36397L8.74228e-08 6.36397L0 7.36397Z" fill="#1c37cd"/>
+                        </svg>
+                        <p class="text-base font-bold leading-relaxed md:text-lg lg:text-2xl">Refonte de l’interface</p>
+                    </span>
+                    <p class="mb-3 text-base font-medium leading-relaxed md:text-lg lg:text-2xl">Au-delà de la migration technique, j’ai également travaillé sur l’interface afin d’assurer une cohérence visuelle entre les différentes pages.
+                    </p>
+                    <p class="mb-6 text-base font-medium leading-relaxed md:text-lg lg:text-2xl">J’ai profité de cette conversion pour revoir le design de l’application, moderniser son apparence et améliorer l’expérience utilisateur, tout en conservant les fonctionnalités principales de HRNet.
+                    </p>
+                    <span class="flex items-center gap-4 mb-3">
+                        <svg width="15" height="16" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.7071 8.07108C14.0976 7.68055 14.0976 7.04739 13.7071 6.65686L7.34315 0.292901C6.95262 -0.0976237 6.31946 -0.0976237 5.92893 0.292901C5.53841 0.683425 5.53841 1.31659 5.92893 1.70711L11.5858 7.36397L5.92893 13.0208C5.53841 13.4113 5.53841 14.0445 5.92893 14.435C6.31946 14.8256 6.95262 14.8256 7.34315 14.435L13.7071 8.07108ZM0 7.36397L-8.74228e-08 8.36397L13 8.36397L13 7.36397L13 6.36397L8.74228e-08 6.36397L0 7.36397Z" fill="#1c37cd"/>
+                        </svg>
+                        <p class="text-base font-bold leading-relaxed md:text-lg lg:text-2xl">Analyse et comparaison des performances</p>
+                    </span>
+                    <p class="mb-3 text-base font-medium leading-relaxed md:text-lg lg:text-2xl">Pour mesurer l’impact de la migration vers React, j’ai réalisé des audits de performance avec Lighthouse.
+                    </p>
+                    <p class="mb-3 text-base font-medium leading-relaxed md:text-lg lg:text-2xl">J’ai effectué un premier audit sur la version originale de l’application développée avec jQuery, puis un second sur la nouvelle version développée avec React et intégrant le composant de fenêtre modale converti.
+                    </p>
+                    <p class="mb-6 text-base font-medium leading-relaxed md:text-lg lg:text-2xl">Cette comparaison m’a permis d’obtenir des données quantifiables et d’évaluer l’évolution des performances entre les deux versions de l’application.
+                    </p>
+            </div>
+        </section>
+        <section class="grid grid-cols-1 gap-8 py-10 px-4 md:gap-8 md:px-8 md:py-14 lg:grid-cols-2 lg:gap-16 lg:px-[6.5rem]">
+            <img src="assets/page_create_employee.png" class="max-w-full object-contain rounded-sm shadow-[0_4px_15px_rgba(0,0,0,0.25)]" alt="Page de création d'employé"/>
+            <img src="assets/modale_react.png" class="max-w-full object-contain rounded-sm shadow-[0_4px_15px_rgba(0,0,0,0.25)]" alt="Fenêtre modale React"/>
+            <img src="assets/table_données.png" class="max-w-full object-contain rounded-sm shadow-[0_4px_15px_rgba(0,0,0,0.25)]" alt="Tableau de données des employés"/>
+            <img src="assets/tables_données_2.png" class="max-w-full object-contain rounded-sm shadow-[0_4px_15px_rgba(0,0,0,0.25)]" alt="Tableau de données des employés"/>
+        </section>
+        <section class="py-10 px-4 md:px-8 md:py-14 lg:px-[6.5rem]">
+            <div>
+                <h2 class="font-title text-3xl font-bold lg:text-5xl">Retour d’expérience</h2>
+            </div>
+            <hr class="my-6 md:my-12 border-t border-black">
+            <div class="grid grid-cols-1 gap-4 md:gap-8 lg:grid-cols-3 lg:gap-16">
+                <div class="">
+                    <p class="text-base font-medium uppercase lg:text-xl">Apprentissages & défis</p>
+                </div>
+                <div class="lg:col-span-2">
+                    <p class="mb-4 text-base font-medium leading-relaxed md:text-lg lg:text-2xl lg:mb-8">Ce projet m’a permis de renforcer ma <strong>maîtrise de React</strong> et d’approfondir ma compréhension de la migration d’une application existante vers une architecture moderne.
+                    </p>
+                    <p class="mb-4 text-base font-medium leading-relaxed md:text-lg lg:text-2xl lg:mb-8">L’un de mes principaux défis a été d’apprendre à <strong>créer et publier un composant React sous forme de package npm</strong>. J’ai dû comprendre les différentes étapes nécessaires à la préparation du package, sa configuration et sa publication sur le registre npm. Cette expérience m’a permis de découvrir une démarche proche de la création et de la distribution d’un véritable composant réutilisable.
+                    </p>
+                    <p class="mb-4 text-base font-medium leading-relaxed md:text-lg lg:text-2xl">J’ai également fait le choix de développer les trois composants React correspondant aux plugins jQuery restants. Le défi le plus important a été la conversion du plugin de gestion des tables de données. Cette fonctionnalité était particulièrement longue à reproduire car elle nécessitait de prendre en compte de <strong>nombreux paramètres et comportements</strong> : affichage des données, tri, pagination, recherche et différentes interactions avec le tableau.
+                    </p>
+                    <p class="mb-2 text-base font-medium leading-relaxed md:text-lg lg:text-2xl">Au-delà des aspects techniques, ce projet m’a surtout appris à être plus autonome dans ma démarche de développement : <strong>analyser l’existant, rechercher des solutions, faire des choix techniques, résoudre des problèmes et mesurer les résultats obtenus</strong>.
+                    </p>
+                </div>
+            </div>
+        </section>
+       
+    </main>
+
+    <footer id="footer" class="bg-black text-white py-16 px-4 md:px-8 lg:px-[6.5rem] flex flex-col">
+        <div class="flex flex-col gap-6 lg:flex-row lg:justify-between lg:gap-10">   
+            <div class="max-w-xl">
+                <img src="assets/logocl-blanc.svg" class="w-28  md:w-40" alt="Cindy Lionis logo"/>
+                <p class="uppercase font-light">Développeuse Front-end & UI/UX Designer</p>
+                <span class="flex items-center gap-4 mt-6 text-lg lg:text-xl lg:mt-8">
+                    <i class="fa-solid fa-location-dot text-2xl"></i>
+                    Lanester
+                </span>
+                <a href="https://github.com/CindyLns" target="_blank" class="flex items-center gap-4 py-4 text-lg lg:text-xl">
+                    <i class="fa-brands fa-github text-2xl"></i>
+                    Github
+                </a>
+            </div>
+            <div class="w-full max-w-xl lg:w-auto">
+                <p class="font-semibold text-xl lg:text-2xl lg:mb-4">Restons en contact</p>
+                <div class="flex flex-col">
+                    <a href="https://www.linkedin.com/in/cindy-lionis-940005174" target="_blank" class="flex items-center gap-4 border-b-[0.5px] border-gray-700 py-4 text-lg lg:text-xl">
+                        <i class="fa-brands fa-linkedin text-2xl"></i>
+                        LinkedIn
+                    </a>
+                    <a href="mailto:cindy.lionis@gmail.com" class="flex items-center gap-4 py-4 text-lg lg:text-xl">
+                        <i class="fa-solid fa-envelope text-xl"></i>
+                        E-mail
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="my-8 border-gray-700">
+        <p class="landing__credit">© 2026 Cindy Lionis</p>
+    </footer>
+    <script>
+        const menuButton = document.querySelector('[data-menu-button]');
+        const mainMenu = document.querySelector('#main-menu');
+
+        menuButton.addEventListener('click', () => {
+            const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+            menuButton.setAttribute('aria-expanded', String(!isOpen));
+            menuButton.setAttribute('aria-label', isOpen ? 'Ouvrir le menu' : 'Fermer le menu');
+            mainMenu.classList.toggle('hidden', isOpen);
+            menuButton.classList.toggle('is-open', !isOpen);
+        });
+
+        mainMenu.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', () => {
+                menuButton.setAttribute('aria-expanded', 'false');
+                menuButton.setAttribute('aria-label', 'Ouvrir le menu');
+                mainMenu.classList.add('hidden');
+                menuButton.classList.remove('is-open');
+            });
+        });
+    </script>
+</body>
+</html>
